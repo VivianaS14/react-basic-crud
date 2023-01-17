@@ -22,7 +22,7 @@ const CreateUser = () => {
       <h2>Create User.jsx</h2>
       <span>Handle http request</span>
       <div className="container">
-        <UserForm />
+        <UserForm onSubmit={sendUser} />
       </div>
     </>
   );

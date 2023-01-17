@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-const UserForm = () => {
+const UserForm = ({ onSubmit }) => {
   const [id, setId] = useState("");
   const [username, setUsername] = useState("");
   const [name, setName] = useState("");
@@ -22,10 +22,19 @@ const UserForm = () => {
     setAge(e.target.value);
   };
 
+  const clearForm = () => {
+    setId("");
+    setUsername("");
+    setName("");
+    setAge("");
+  };
+
   const handleSubmit = (e) => {
     e.preventDefault();
     const user = { id, name, username, age };
+    onSubmit(user);
     console.log(user);
+    clearForm();
   };
 
   return (
