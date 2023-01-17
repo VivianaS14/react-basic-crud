@@ -17,6 +17,12 @@
       "name": "Dinosour",
       "username": "@dyno",
       "age": "300"
+    },
+    {
+      "id": "304",
+      "name": "Harold",
+      "username": "@cold",
+      "age": "12"
     }
   ]
 }

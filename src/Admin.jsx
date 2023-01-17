@@ -1,5 +1,6 @@
 import React from "react";
 import CreateUser from "./container/CreateUser";
+import GetUsers from "./container/GetUsers";
 
 const Admin = () => {
   return (
@@ -7,6 +8,7 @@ const Admin = () => {
       <h1>Admin.jsx</h1>
       <div className="p-1">
         <CreateUser />
+        <GetUsers />
       </div>
     </>
   );
