@@ -1,10 +1,19 @@
 import React from "react";
-import { createBrowserRouter } from "react-router-dom";
+import {
+  createBrowserRouter,
+  createRoutesFromElements,
+  Route,
+  RouterProvider,
+} from "react-router-dom";
 
-const router = createBrowserRouter();
+import Navbar from "./Navbar";
+
+const router = createBrowserRouter(
+  createRoutesFromElements(<Route path="/" element={<Navbar />} />)
+);
 
 const App = () => {
-  return <div>Soy App</div>;
+  return <RouterProvider router={router} />;
 };
 
 export default App;
