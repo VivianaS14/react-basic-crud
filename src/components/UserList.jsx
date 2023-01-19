@@ -1,4 +1,5 @@
 import React from "react";
+import UserCard from "./UserCard";
 
 const UserList = ({ list }) => {
   return (
@@ -10,13 +11,12 @@ const UserList = ({ list }) => {
         </div>
         <div className="col-6">
           {list.map((e) => (
-            <div key={e.id} className="card text-bg-light mb-3 w-50">
-              <div className="card-header">{e.username}</div>
-              <div className="card-body">
-                <h5 className="card-title">{e.name}</h5>
-                <p className="card-text">{e.age}</p>
-              </div>
-            </div>
+            <UserCard
+              key={e.id}
+              username={e.username}
+              name={e.name}
+              age={e.age}
+            />
           ))}
         </div>
       </div>
