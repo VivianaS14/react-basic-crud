@@ -1,10 +1,15 @@
 import React from "react";
-import { useParams } from "react-router-dom";
+import GetUserDetail from "./container/GetUserDetail";
 
 const UserDetail = () => {
-  const params = useParams();
-
-  return <div>UserProfile {params.id}</div>;
+  return (
+    <>
+      <h1> UserDetail.jsx</h1>
+      <div className="p-1">
+        <GetUserDetail />
+      </div>
+    </>
+  );
 };
 
 export default UserDetail;
