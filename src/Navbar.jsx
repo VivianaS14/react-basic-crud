@@ -18,6 +18,11 @@ const Navbar = () => {
                   ADMIN
                 </Link>
               </li>
+              <li className="nav-item">
+                <Link className="nav-link" to="/users">
+                  USERS
+                </Link>
+              </li>
             </ul>
           </div>
         </div>
