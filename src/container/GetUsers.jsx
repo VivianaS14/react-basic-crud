@@ -25,7 +25,7 @@ const GetUsers = () => {
 
   return (
     <>
-      <h3>GetUsers.jsx</h3>
+      <h3>Container: GetUsers.jsx</h3>
       {IsLoading && <p>Loading...</p>}
       {error && <p>Ups error</p>}
       {data && <UserList list={data} />}

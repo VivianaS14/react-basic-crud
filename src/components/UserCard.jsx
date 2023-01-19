@@ -1,8 +1,8 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-const UserCard = ({ username, name, age }) => {
-  const LINK_ADDRESS = `/users${username.id}`;
+const UserCard = ({ username, name, age, id }) => {
+  const LINK_ADDRESS = `/users/${id}`;
 
   return (
     <div>

@@ -16,6 +16,7 @@ const UserList = ({ list }) => {
               username={e.username}
               name={e.name}
               age={e.age}
+              id={e.id}
             />
           ))}
         </div>
